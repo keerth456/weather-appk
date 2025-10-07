@@ -3,7 +3,7 @@ alert("✅ Script connected!");
 async function getWeather()     
   const city =
 document.getElementById("city").value;
-   const resultiDv =
+   const resultDiv =
 document.getElementById("result");
 
 if (city === "") {
@@ -15,7 +15,7 @@ if (city === "") {
 try {
   const response = await fetch(apiUrl);
   const data = await response.text();
-  resultDiv.innerHTML = ' ⛅Weather in ${city}: ${data}:
+  resultDiv.innerHTML = ` ⛅Weather in ${city}: ${data}`;
 } catch (error) {
   resultDiv.innerHTML = "❌ Could not get weather data. Try again!";
 }
