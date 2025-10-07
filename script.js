@@ -1,14 +1,14 @@
-async function getweather()     
+async function getWeather()     
   const city =
 document.getElementById("city").value;
    const resultiDv =
 document.getElementById("result");
 
-if (city === " ") {
+if (city === "") {
   resultDiv.innerHTML = "⚠️Please enter a city name 🌆";
   return; 
 }
- const apiUrl ='https://wttr.in/${city}?format=%C+%t';
+ const apiUrl =`https://wttr.in/${city}?format=%C+%t`;
 
 try {
   const response = await fetch(apiUrl);
