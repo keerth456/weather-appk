@@ -8,7 +8,7 @@ if (city === " ") {
   resultDiv.innerHTML = "⚠️Please enter a city name 🌆";
   return; 
 }
- const apiUrl ="https://wttr.in/" + city + "?format=%t";
+ const apiUrl ='https://wttr.in/${city}?format=%C+%t';
 
 try {
   const response = await fetch(apiUrl);
