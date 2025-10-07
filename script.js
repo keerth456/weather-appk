@@ -1,3 +1,5 @@
+alert("✅ Script connected!");
+
 async function getWeather()     
   const city =
 document.getElementById("city").value;
