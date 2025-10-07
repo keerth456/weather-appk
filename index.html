@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en"
 <head> 
+  <meta charset="UTF-8"
+  <meta name="viewport"
+  content="width=device-width,initial-scale=1.0">  
   <title>Weather App/title>
    <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <h1>🌞 weather app</h1>
-  <div class="weather-box">
+  <div class="search-box">
     <input type="text" id="city"
-   placeholder="enter city name">
-      <button onclick="getweather()">search</button>
-      <div> id="result"></div></div>
-
+   placeholder="Enter city name..."><button
+       onclick="getWeather()">search</button></div>
+      <div class="weather-info" id="result"></div></div>
        <script src="script.js"></script>
 </body>
 </html>
