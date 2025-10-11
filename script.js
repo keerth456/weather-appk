@@ -1,3 +1,5 @@
+console.log("✅ Script connected!");
+
 alert("✅ Script connected!");
 
 async function getWeather()     
